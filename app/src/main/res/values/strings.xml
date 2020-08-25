@@ -2,5 +2,5 @@
     <string name="app_name">SumaNumeros</string>
     <string name="Titulo">Suma de Dos Números</string>
     <string name="Mensaje_numeros">Introduce un número</string>
-
+    <string name="btnSumar">Sumar</string>
 </resources>
