@@ -22,7 +22,9 @@
         android:id="@+id/btnSuma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#DC8A1A1A"
         android:text="@string/btnSumar"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,65 +36,84 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/Mensaje_numeros"
+        android:hint="@string/placeholder"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toBottomOf="@+id/lblDescripcion2"
+        app:layout_constraintVertical_bias="0.288" />
 
     <EditText
         android:id="@+id/txtNum1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/Mensaje_numeros"
+        android:hint="@string/placeholder"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintTop_toBottomOf="@+id/lblDescripcion1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="246dp" />
+        app:layout_constraintGuide_begin="288dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="390dp" />
+        app:layout_constraintGuide_begin="428dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="119dp" />
+        app:layout_constraintGuide_begin="165dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="487dp" />
+        app:layout_constraintGuide_begin="548dp" />
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/lblDescripcion1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/Titulo"
-        android:text="@string/Titulo"
-        android:textSize="25sp"
-        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginTop="16dp"
+        android:text="@string/label1"
+        android:textColor="#DC8A1A1A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/lblDescripcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/label2"
+        android:textColor="#DC8A1A1A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="296dp"
+        android:layout_height="44dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tittle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

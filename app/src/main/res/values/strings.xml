@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">SumaNumeros</string>
-    <string name="Titulo">Suma de Dos Números</string>
-    <string name="Mensaje_numeros">Introduce un número</string>
+    <string name="tittle">Suma de Dos Números</string>
+    <string name="placeholder">Introduce un número</string>
+    <string name="label1">Introduce el número 1</string>
+    <string name="label2">Introduce el número 2</string>
     <string name="btnSumar">Sumar</string>
 </resources>
