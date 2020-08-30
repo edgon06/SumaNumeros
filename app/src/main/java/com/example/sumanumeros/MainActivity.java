@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Declaracion variables de componentes (o "vistas")
+    // Declaracion de variables para referenciar las "vistas"
     TextView txtSalida;
     EditText txtNum1, txtNum2;
     Button btnSumar, btnRestar, btnMultiplicar, btnDividir;
@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         txtSalida = findViewById(R.id.txtSalida);
 
         // Asignar comportamiento a los botones
-
         btnSumar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
@@ -107,21 +106,20 @@ public class MainActivity extends AppCompatActivity {
         return num1 + num2;
     }
 
-    private float multiplicar(float num1, float num2)
-    {
-        return num1 * num2;
-    }
-
     private float restar(float num1, float num2)
     {
         return num1 - num2;
+    }
+
+    private float multiplicar(float num1, float num2)
+    {
+        return num1 * num2;
     }
 
     private float dividir(float num1, float num2)
     {
         if(num2==0){
             txtNum2.setError(getText(R.string.mensajeErrorDivision));
-            // Toast.makeText(MainActivity.this, getText(R.string.mensajeErrorDivision), Toast.LENGTH_SHORT).show();
         }
         return num1 / num2;
     }
@@ -131,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
     {
         txtSalida.setText(resultado);
     }
+
+    // Metodo para notificar al usuario que no debe dejar casillas vacias
     private void verificar()
     {
         if( txtNum1.getText().toString().equals(""))
