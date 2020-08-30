@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">SumaNumeros</string>
+    <string name="app_name">Operación entre Dos Números</string>
     <string name="tittle">Suma de Dos Números</string>
     <string name="placeholder">Introduce un número</string>
     <string name="label1">Introduce el número 1</string>
     <string name="label2">Introduce el número 2</string>
     <string name="btnSumar">Sumar</string>
+    <string name="btnRestar">Restar</string>
+    <string name="btnMultiplicar">Multiplicar</string>
+    <string name="btnDividir">Dividir</string>
+    <string name="mensajeError">Revisa que los datos sean adecuados.</string>
+    <string name="mensajeErrorDivision">El divisor no debería ser 0.</string>
+    <string name="mensajeCasillaVacia">No puedes dejar una casilla vacía. Introduce un número.</string>
 </resources>
